@@ -1,0 +1,196 @@
+/* ============================= */
+/* BASIC RESET */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================= */
+/* GENERAL STYLING */
+/* ============================= */
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ============================= */
+/* HOMEPAGE */
+/* ============================= */
+body.homepage {
+  background-color: #111;
+  text-align: center;
+}
+
+/* Header and Navbar */
+.header {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  color: #c084fc;
+}
+
+/* Main Section */
+#p1 {
+  background: url("asset/bts-bg.jpg") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.Home {
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
+  max-width: 700px;
+}
+
+.Home h1 {
+  color: #c084fc;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.Home p {
+  font-size: 1rem;
+  color: #f8f8f8;
+}
+
+/* BTS Image */
+.img {
+  display: block;
+  width: 90%;
+  max-width: 700px;
+  margin: 2rem auto;
+  border-radius: 10px;
+}
+
+/* ============================= */
+/* ABOUT PAGE */
+/* ============================= */
+body.container2 {
+  background: linear-gradient(135deg, #0b001a, #2d0052);
+  padding: 2rem;
+  text-align: center;
+}
+
+.h1 h1 {
+  color: #c084fc;
+  margin-bottom: 1.5rem;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.content p {
+  color: #f4eaff;
+  margin-bottom: 1rem;
+}
+
+.army {
+  color: #ff9fcb;
+  font-weight: bold;
+}
+
+/* ============================= */
+/* MEMBERS PAGE */
+/* ============================= */
+body.container {
+  background: linear-gradient(135deg, #1a0033, #3d0066);
+  padding: 2rem;
+  text-align: center;
+}
+
+.Members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.pictures {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 300px;
+  margin: auto;
+}
+
+.pictures img {
+  width: 100%;
+  display: block;
+}
+
+.info1, .info2, .info3, .info4, .info5, .info6, .info7 {
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info1 h2, .info2 h2, .info3 h2, .info4 h2, .info5 h2, .info6 h2, .info7 h2 {
+  color: #ff9fcb;
+  margin-bottom: 0.5rem;
+}
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+@media (max-width: 768px) {
+  .Home h1 {
+    font-size: 2rem;
+  }
+
+  .Home p {
+    font-size: 0.9rem;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  .Members {
+    grid-template-columns: 1fr;
+  }
+}
